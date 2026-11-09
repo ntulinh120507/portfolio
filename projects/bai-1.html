@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 1. Thao tác cơ bản với tệp tin và thư mục · Portfolio Nguyễn Tú Linh</title>
+<meta name="description" content="Thiết lập một hệ thống thư mục học tập khoa học và bộ quy tắc đặt tên tệp thống nhất, giúp tìm kiếm nhanh, tránh trùng lặp phiên bản và sao lưu an toàn.">
+<meta name="author" content="Nguyễn Tú Linh">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23b5462f'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Georgia'>P</text></svg>">
+</head>
+<body>
+<a class="skip" href="#main">Bỏ qua điều hướng</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../index.html"><span class="seal">P</span><span>Portfolio · Nguyễn Tú Linh</span></a>
+    <ul class="menu" id="menu">
+      <li><a href="../index.html">Giới thiệu</a></li>
+      <li class="has-sub"><button class="drop" aria-expanded="false" aria-haspopup="true">Dự án ▾</button>
+        <ul class="submenu">
+          <li><a href="../projects.html"><b>Tất cả dự án</b><small>Tổng quan 06 bài tập</small></a></li>
+          <li><a href="../projects/bai-1.html" aria-current="page">Bài 1. Thao tác cơ bản với tệp tin và thư mục<small>Chương 1</small></a></li><li><a href="../projects/bai-2.html">Bài 2. Tìm kiếm và đánh giá thông tin học thuật<small>Chương 2</small></a></li><li><a href="../projects/bai-3.html">Bài 3. Viết Prompt hiệu quả cho các tác vụ học tập<small>Chương 3</small></a></li><li><a href="../projects/bai-4.html">Bài 4. Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm<small>Chương 4</small></a></li><li><a href="../projects/bai-5.html">Bài 5. Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung<small>Chương 5</small></a></li><li><a href="../projects/bai-6.html">Bài 6. Sử dụng AI có trách nhiệm trong học tập và nghiên cứu<small>Chương 6</small></a></li>
+        </ul></li>
+      <li><a href="../conclusion.html">Tổng kết</a></li>
+    </ul>
+    <div class="tools">
+      <button class="icon-btn" id="theme-toggle" aria-label="Đổi chế độ sáng/tối">☾</button>
+      <button class="icon-btn burger" id="burger" aria-label="Mở menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+<section class="hero"><div class="wrap"><div class="crumbs"><a href="../index.html">Trang chủ</a> / <a href="../projects.html">Dự án</a> / Bài 1</div><div class="eyebrow">Chương 1: Máy tính và các thiết bị ngoại vi · mục 1.4</div><h1>Bài 1. Thao tác cơ bản với tệp tin và thư mục</h1></div></section>
+<main id="main" class="wrap">
+  <section>
+    <h2><span class="section-tag"><span>a</span>Mục tiêu bài tập</span></h2>
+    <p>Thiết lập một hệ thống thư mục học tập khoa học và bộ quy tắc đặt tên tệp thống nhất, giúp tìm kiếm nhanh, tránh trùng lặp phiên bản và sao lưu an toàn.</p>
+    <p><b>Kỹ năng được rèn luyện:</b></p>
+    <ul class="chips"><li>Tạo, đổi tên, di chuyển, sao chép, xóa tệp và thư mục</li><li>Tổ chức dữ liệu theo cấu trúc phân cấp</li><li>Đặt tên tệp nhất quán, có quản lý phiên bản</li><li>Sao lưu dữ liệu lên đám mây (Google Drive)</li></ul>
+  </section>
+  <section>
+    <h2><span class="section-tag"><span>b</span>Tóm tắt quá trình thực hiện</span></h2>
+    <h3>Các bước thực hiện</h3>
+    <ol class="steps"><li>Rà soát toàn bộ tệp học tập đang nằm rải rác ở Desktop, Downloads và Zalo; liệt kê các nhóm tài liệu chính (bài giảng, bài tập, tài liệu tham khảo, sản phẩm).</li><li>Thiết kế cây thư mục 4 cấp: Năm học → Học kỳ → Học phần → Loại tài liệu. Dùng tiền tố số (00_, 01_, 99_) để cố định thứ tự hiển thị.</li><li>Xây dựng quy tắc đặt tên: YYYY-MM-DD_MaHP_NoiDung_vXX.duoi — không dấu, không khoảng trắng, ngày theo chuẩn ISO để sắp xếp đúng thứ tự thời gian.</li><li>Tạo cấu trúc thư mục tự động bằng tệp lệnh (tao-thu-muc.bat cho Windows) để tránh gõ sai; di chuyển và đổi tên các tệp cũ theo quy tắc mới.</li><li>Bật đồng bộ thư mục gốc với Google Drive for Desktop; áp dụng quy tắc sao lưu 3-2-1 (3 bản, 2 thiết bị lưu trữ, 1 bản ngoài máy).</li></ol>
+    <h3>Công cụ đã sử dụng</h3>
+    <div class="table-wrap"><table><thead><tr><th>Công cụ</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td><b>Windows File Explorer</b></td><td>Tạo, sắp xếp, đổi tên thư mục và tệp</td></tr><tr><td><b>Google Drive for Desktop</b></td><td>Đồng bộ và sao lưu đám mây</td></tr><tr><td><b>Claude (Anthropic)</b></td><td>Gợi ý cấu trúc thư mục và viết tệp lệnh tạo thư mục tự động; sinh viên kiểm tra, chạy thử và điều chỉnh</td></tr></tbody></table></div>
+    <p class="ai-note" style="margin-top:14px"><b>Sử dụng AI:</b> Gợi ý cấu trúc thư mục và viết tệp lệnh tạo thư mục tự động; sinh viên kiểm tra, chạy thử và điều chỉnh.</p>
+    <h3>Khó khăn & cách giải quyết</h3>
+    <div class="table-wrap"><table><thead><tr><th>Khó khăn</th><th>Cách giải quyết</th></tr></thead><tbody><tr><td>Tên tệp có dấu tiếng Việt và khoảng trắng gây lỗi khi tải lên một số hệ thống, đường dẫn bị mã hóa thành %20.</td><td>Quy ước viết không dấu, dùng gạch dưới (_) ngăn cách thành phần và gạch nối (-) trong cùng thành phần.</td></tr><tr><td>Nhiều phiên bản "final", "final2", "final-moi-nhat" gây nhầm lẫn.</td><td>Bỏ hẳn chữ "final", đánh số phiên bản v01, v02…; bản nộp thêm hậu tố _NOP.</td></tr></tbody></table></div>
+  </section>
+  <section>
+    <h2><span class="section-tag"><span>c</span>Sản phẩm cuối cùng</span></h2>
+    
+<h3>Cấu trúc thư mục học tập</h3>
+<figure class="figure"><img src="../assets/img/cay-thu-muc.png" alt="Sơ đồ cây thư mục học tập 4 cấp" loading="lazy"><figcaption>Sơ đồ cấu trúc thư mục học tập 4 cấp (Năm học → Học kỳ → Học phần → Loại tài liệu)</figcaption></figure>
+<h3>Quy tắc đặt tên tệp</h3>
+<p>Mẫu chung: <code>YYYY-MM-DD_MaHP_NoiDung_vXX.duoi</code></p>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>Quy tắc</th><th>Lý do</th></tr></thead><tbody>
+<tr><td>1</td><td>Viết tiếng Việt không dấu, không khoảng trắng</td><td>Tránh lỗi đường dẫn khi tải lên web, gửi email</td></tr>
+<tr><td>2</td><td>Dùng <code>_</code> ngăn cách thành phần, <code>-</code> nối từ trong cùng thành phần</td><td>Dễ đọc, dễ tách thông tin</td></tr>
+<tr><td>3</td><td>Ngày đặt đầu, dạng <code>YYYY-MM-DD</code></td><td>Tệp tự sắp xếp đúng thứ tự thời gian</td></tr>
+<tr><td>4</td><td>Có mã học phần (ví dụ <code>INF2501</code>)</td><td>Tìm nhanh bằng ô tìm kiếm của hệ điều hành</td></tr>
+<tr><td>5</td><td>Phiên bản <code>v01, v02…</code>; bản nộp thêm <code>_NOP</code>; không dùng chữ “final”</td><td>Không nhầm lẫn giữa các bản</td></tr>
+<tr><td>6</td><td>Thư mục bắt đầu bằng số <code>00_ … 99_</code></td><td>Cố định thứ tự hiển thị</td></tr>
+</tbody></table></div>
+<h3>Ví dụ áp dụng</h3>
+<pre>Truoc:  Bai tap chuong 2 (final) moi nhat.docx
+Sau:    2026-10-05_INF2501_Bai2-TimKiemHocThuat_v02.docx
+
+Truoc:  baocao cuoi ky.docx
+Sau:    2026-11-20_INF2501_BaoCao-Portfolio_v03_NOP.docx</pre>
+<h3>Tạo thư mục tự động & sao lưu</h3>
+<p>Tải tệp lệnh: <a href="../assets/files/tao-thu-muc.bat" download>tao-thu-muc.bat</a> (Windows) · <a href="../assets/files/tao-thu-muc.sh" download>tao-thu-muc.sh</a> (macOS/Linux). Thư mục gốc được đồng bộ bằng Google Drive for Desktop, áp dụng quy tắc sao lưu <b>3-2-1</b>: 3 bản sao, trên 2 loại thiết bị, 1 bản lưu ngoài máy.</p>
+<h3>Minh chứng</h3>
+<div class="placeholder"><mark class="todo">✍ Chèn ảnh chụp màn hình File Explorer trên máy của bạn sau khi chạy tệp lệnh (assets/img/bai1-explorer.png)</mark></div>
+  </section>
+  <nav class="pager" aria-label="Điều hướng bài tập">
+    <a class="btn" href="../projects.html">← Về trang Dự án</a>
+    <a class="btn" href="../projects.html">☰ Danh mục dự án</a>
+    <a class="btn primary" href="bai-2.html">Bài 2. Tìm kiếm học thuật →</a>
+  </nav>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div><b>Nguyễn Tú Linh</b> · MSSV: 2552210399 · Lớp: K20H-SPAN</div>
+    <div>Học phần: Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo (INF2501) · Trường Đại học Sư phạm Nghệ thuật Trung ương</div>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
