@@ -4,26 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bài 1. Thao tác cơ bản với tệp tin và thư mục · Portfolio Nguyễn Tú Linh</title>
-<meta name="description" content="Thiết lập một hệ thống thư mục học tập khoa học và bộ quy tắc đặt tên tệp thống nhất, giúp tìm kiếm nhanh, tránh trùng lặp phiên bản và sao lưu an toàn.">
+<meta name="description" content="Thực hành thành thạo các thao tác quản lý dữ liệu cơ bản trên hệ điều hành Windows.">
 <meta name="author" content="Nguyễn Tú Linh">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23b5462f'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Georgia'>P</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23e07a9b'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Georgia'>♪</text></svg>">
 </head>
 <body>
 <a class="skip" href="#main">Bỏ qua điều hướng</a>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="../index.html"><span class="seal">P</span><span>Portfolio · Nguyễn Tú Linh</span></a>
+    <a class="brand" href="../index.html"><span class="seal">♪</span><span>Portfolio · Nguyễn Tú Linh</span></a>
     <ul class="menu" id="menu">
-      <li><a href="../index.html">Giới thiệu</a></li>
-      <li class="has-sub"><button class="drop" aria-expanded="false" aria-haspopup="true">Dự án ▾</button>
-        <ul class="submenu">
-          <li><a href="../projects.html"><b>Tất cả dự án</b><small>Tổng quan 06 bài tập</small></a></li>
-          <li><a href="../projects/bai-1.html" aria-current="page">Bài 1. Thao tác cơ bản với tệp tin và thư mục<small>Chương 1</small></a></li><li><a href="../projects/bai-2.html">Bài 2. Tìm kiếm và đánh giá thông tin học thuật<small>Chương 2</small></a></li><li><a href="../projects/bai-3.html">Bài 3. Viết Prompt hiệu quả cho các tác vụ học tập<small>Chương 3</small></a></li><li><a href="../projects/bai-4.html">Bài 4. Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm<small>Chương 4</small></a></li><li><a href="../projects/bai-5.html">Bài 5. Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung<small>Chương 5</small></a></li><li><a href="../projects/bai-6.html">Bài 6. Sử dụng AI có trách nhiệm trong học tập và nghiên cứu<small>Chương 6</small></a></li>
-        </ul></li>
-      <li><a href="../conclusion.html">Tổng kết</a></li>
+      <li><a href="../index.html#gioi-thieu" data-spy="gioi-thieu">Giới thiệu</a></li>
+      <li class="has-sub"><a href="../index.html#du-an" data-spy="du-an" aria-current="page">Dự án & bài tập</a><button class="drop" aria-expanded="false" aria-label="Mở danh sách bài tập">▾</button>
+        <ul class="submenu"><li><a href="../projects/bai-1.html" aria-current="page">Bài 1. Thao tác cơ bản với tệp tin và thư mục<small>Chương 1</small></a></li><li><a href="../projects/bai-2.html">Bài 2. Tìm kiếm và đánh giá thông tin học thuật<small>Chương 2</small></a></li><li><a href="../projects/bai-3.html">Bài 3. Viết Prompt hiệu quả cho các tác vụ học tập<small>Chương 3</small></a></li><li><a href="../projects/bai-4.html">Bài 4. Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm<small>Chương 4</small></a></li><li><a href="../projects/bai-5.html">Bài 5. Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung<small>Chương 5</small></a></li><li><a href="../projects/bai-6.html">Bài 6. Sử dụng AI có trách nhiệm trong học tập và nghiên cứu<small>Chương 6</small></a></li></ul></li>
+      <li><a href="../index.html#tong-ket" data-spy="tong-ket">Tổng kết</a></li>
     </ul>
     <div class="tools">
       <button class="icon-btn" id="theme-toggle" aria-label="Đổi chế độ sáng/tối">☾</button>
@@ -31,64 +28,47 @@
     </div>
   </div>
 </header>
-<section class="hero"><div class="wrap"><div class="crumbs"><a href="../index.html">Trang chủ</a> / <a href="../projects.html">Dự án</a> / Bài 1</div><div class="eyebrow">Chương 1: Máy tính và các thiết bị ngoại vi · mục 1.4</div><h1>Bài 1. Thao tác cơ bản với tệp tin và thư mục</h1></div></section>
-<main id="main" class="wrap">
-  <section>
-    <h2><span class="section-tag"><span>a</span>Mục tiêu bài tập</span></h2>
-    <p>Thiết lập một hệ thống thư mục học tập khoa học và bộ quy tắc đặt tên tệp thống nhất, giúp tìm kiếm nhanh, tránh trùng lặp phiên bản và sao lưu an toàn.</p>
-    <p><b>Kỹ năng được rèn luyện:</b></p>
-    <ul class="chips"><li>Tạo, đổi tên, di chuyển, sao chép, xóa tệp và thư mục</li><li>Tổ chức dữ liệu theo cấu trúc phân cấp</li><li>Đặt tên tệp nhất quán, có quản lý phiên bản</li><li>Sao lưu dữ liệu lên đám mây (Google Drive)</li></ul>
-  </section>
-  <section>
-    <h2><span class="section-tag"><span>b</span>Tóm tắt quá trình thực hiện</span></h2>
-    <h3>Các bước thực hiện</h3>
-    <ol class="steps"><li>Rà soát toàn bộ tệp học tập đang nằm rải rác ở Desktop, Downloads và Zalo; liệt kê các nhóm tài liệu chính (bài giảng, bài tập, tài liệu tham khảo, sản phẩm).</li><li>Thiết kế cây thư mục 4 cấp: Năm học → Học kỳ → Học phần → Loại tài liệu. Dùng tiền tố số (00_, 01_, 99_) để cố định thứ tự hiển thị.</li><li>Xây dựng quy tắc đặt tên: YYYY-MM-DD_MaHP_NoiDung_vXX.duoi — không dấu, không khoảng trắng, ngày theo chuẩn ISO để sắp xếp đúng thứ tự thời gian.</li><li>Tạo cấu trúc thư mục tự động bằng tệp lệnh (tao-thu-muc.bat cho Windows) để tránh gõ sai; di chuyển và đổi tên các tệp cũ theo quy tắc mới.</li><li>Bật đồng bộ thư mục gốc với Google Drive for Desktop; áp dụng quy tắc sao lưu 3-2-1 (3 bản, 2 thiết bị lưu trữ, 1 bản ngoài máy).</li></ol>
-    <h3>Công cụ đã sử dụng</h3>
-    <div class="table-wrap"><table><thead><tr><th>Công cụ</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td><b>Windows File Explorer</b></td><td>Tạo, sắp xếp, đổi tên thư mục và tệp</td></tr><tr><td><b>Google Drive for Desktop</b></td><td>Đồng bộ và sao lưu đám mây</td></tr><tr><td><b>Claude (Anthropic)</b></td><td>Gợi ý cấu trúc thư mục và viết tệp lệnh tạo thư mục tự động; sinh viên kiểm tra, chạy thử và điều chỉnh</td></tr></tbody></table></div>
-    <p class="ai-note" style="margin-top:14px"><b>Sử dụng AI:</b> Gợi ý cấu trúc thư mục và viết tệp lệnh tạo thư mục tự động; sinh viên kiểm tra, chạy thử và điều chỉnh.</p>
-    <h3>Khó khăn & cách giải quyết</h3>
-    <div class="table-wrap"><table><thead><tr><th>Khó khăn</th><th>Cách giải quyết</th></tr></thead><tbody><tr><td>Tên tệp có dấu tiếng Việt và khoảng trắng gây lỗi khi tải lên một số hệ thống, đường dẫn bị mã hóa thành %20.</td><td>Quy ước viết không dấu, dùng gạch dưới (_) ngăn cách thành phần và gạch nối (-) trong cùng thành phần.</td></tr><tr><td>Nhiều phiên bản "final", "final2", "final-moi-nhat" gây nhầm lẫn.</td><td>Bỏ hẳn chữ "final", đánh số phiên bản v01, v02…; bản nộp thêm hậu tố _NOP.</td></tr></tbody></table></div>
-  </section>
-  <section>
-    <h2><span class="section-tag"><span>c</span>Sản phẩm cuối cùng</span></h2>
-    
-<h3>Cấu trúc thư mục học tập</h3>
-<figure class="figure"><img src="../assets/img/cay-thu-muc.png" alt="Sơ đồ cây thư mục học tập 4 cấp" loading="lazy"><figcaption>Sơ đồ cấu trúc thư mục học tập 4 cấp (Năm học → Học kỳ → Học phần → Loại tài liệu)</figcaption></figure>
-<h3>Quy tắc đặt tên tệp</h3>
-<p>Mẫu chung: <code>YYYY-MM-DD_MaHP_NoiDung_vXX.duoi</code></p>
-<div class="table-wrap"><table><thead><tr><th>#</th><th>Quy tắc</th><th>Lý do</th></tr></thead><tbody>
-<tr><td>1</td><td>Viết tiếng Việt không dấu, không khoảng trắng</td><td>Tránh lỗi đường dẫn khi tải lên web, gửi email</td></tr>
-<tr><td>2</td><td>Dùng <code>_</code> ngăn cách thành phần, <code>-</code> nối từ trong cùng thành phần</td><td>Dễ đọc, dễ tách thông tin</td></tr>
-<tr><td>3</td><td>Ngày đặt đầu, dạng <code>YYYY-MM-DD</code></td><td>Tệp tự sắp xếp đúng thứ tự thời gian</td></tr>
-<tr><td>4</td><td>Có mã học phần (ví dụ <code>INF2501</code>)</td><td>Tìm nhanh bằng ô tìm kiếm của hệ điều hành</td></tr>
-<tr><td>5</td><td>Phiên bản <code>v01, v02…</code>; bản nộp thêm <code>_NOP</code>; không dùng chữ “final”</td><td>Không nhầm lẫn giữa các bản</td></tr>
-<tr><td>6</td><td>Thư mục bắt đầu bằng số <code>00_ … 99_</code></td><td>Cố định thứ tự hiển thị</td></tr>
-</tbody></table></div>
-<h3>Ví dụ áp dụng</h3>
-<pre>Truoc:  Bai tap chuong 2 (final) moi nhat.docx
-Sau:    2026-10-05_INF2501_Bai2-TimKiemHocThuat_v02.docx
 
-Truoc:  baocao cuoi ky.docx
-Sau:    2026-11-20_INF2501_BaoCao-Portfolio_v03_NOP.docx</pre>
-<h3>Tạo thư mục tự động & sao lưu</h3>
-<p>Tải tệp lệnh: <a href="../assets/files/tao-thu-muc.bat" download>tao-thu-muc.bat</a> (Windows) · <a href="../assets/files/tao-thu-muc.sh" download>tao-thu-muc.sh</a> (macOS/Linux). Thư mục gốc được đồng bộ bằng Google Drive for Desktop, áp dụng quy tắc sao lưu <b>3-2-1</b>: 3 bản sao, trên 2 loại thiết bị, 1 bản lưu ngoài máy.</p>
-<h3>Minh chứng</h3>
-<figure class="figure"><img src="../assets/img/bai1-root.png" alt="Thư mục gốc HocTap_2026-2027 sau khi chạy tệp lệnh" loading="lazy"><figcaption>Thư mục gốc được tạo tự động bằng tệp lệnh</figcaption></figure>
-<figure class="figure"><img src="../assets/img/bai1-tree.png" alt="Kết quả lệnh tree hiển thị cây thư mục 4 cấp" loading="lazy" style="max-width:560px;display:block;margin:0 auto"><figcaption>Toàn bộ cây thư mục, xem bằng lệnh <code>tree</code></figcaption></figure>
-<figure class="figure"><img src="../assets/img/bai1-explorer.png" alt="Tệp đặt tên theo quy tắc trong thư mục Bai02" loading="lazy"><figcaption>Hai phiên bản tệp đặt tên theo quy tắc trong thư mục <code>Bai02</code></figcaption></figure>
+<section class="hero small"><div class="wrap">
+  <div class="crumbs"><a href="../index.html">Trang chủ</a> / <a href="../index.html#du-an">Dự án &amp; bài tập</a> / Bài 1</div>
+  <div class="eyebrow">Chương 1: Máy tính và các thiết bị ngoại vi · mục 1.4</div>
+  <h1>Bài tập 1. Thao tác cơ bản với tệp tin và thư mục</h1>
+  <nav class="jump" aria-label="Các phần của bài"><a href="#a">a. Mục tiêu</a><a href="#b">b. Quá trình thực hiện</a><a href="#c">c. Sản phẩm</a></nav>
+</div></section>
+<main id="main" class="wrap ex">
+  <section id="a">
+    <h2><span class="section-tag"><span>a</span>Mục tiêu bài tập</span></h2>
+    <ul class="tick"><li>Thực hành thành thạo các thao tác quản lý dữ liệu cơ bản trên hệ điều hành Windows.</li></ul>
+    <p><b>Kỹ năng được rèn luyện:</b></p>
+    <ul class="chips"><li>Tạo, đổi tên tệp tin và thư mục</li><li>Sao chép (Copy) và di chuyển (Cut)</li><li>Xóa tạm thời và xóa vĩnh viễn</li><li>Khôi phục từ Thùng rác</li></ul>
+  </section>
+  <section id="b">
+    <h2><span class="section-tag"><span>b</span>Tóm tắt quá trình thực hiện</span></h2>
+    <h3>Các bước thực hiện</h3><ol class="steps"><li><b>Mở File Explorer</b></li><li><b>Tạo thư mục mới</b></li><li><b>Tạo tệp tin văn bản</b></li><li><b>Đổi tên tệp tin</b></li><li><b>Tạo thư mục con</b></li><li><b>Sao chép tệp tin (Copy &amp; Paste)</b></li><li><b>Di chuyển tệp tin (Cut &amp; Paste)</b></li><li><b>Xóa tệp tin</b></li><li><b>Xóa vĩnh viễn</b></li><li><b>Khôi phục từ Thùng rác</b></li></ol><p class="muted">Chi tiết từng bước và ảnh minh chứng ở phần c) bên dưới.</p>
+    <h3>Công cụ đã sử dụng</h3>
+    <div class="table-wrap"><table class=""><thead><tr><th>Công cụ</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td><b>Windows File Explorer</b></td><td>Thực hiện toàn bộ thao tác với tệp tin và thư mục</td></tr><tr><td><b>Recycle Bin (Thùng rác)</b></td><td>Kiểm tra và khôi phục tệp đã xóa</td></tr></tbody></table></div>
+    <h3>Khó khăn gặp phải và cách giải quyết</h3>
+    <div class="table-wrap"><table class=""><thead><tr><th>Khó khăn</th><th>Cách giải quyết</th></tr></thead><tbody><tr><td>Dễ nhầm lẫn giữa Copy (sao chép – giữ lại bản gốc) và Cut (di chuyển – mất bản gốc ở vị trí cũ).</td><td>Ôn lại lý thuyết, quan sát trạng thái của tệp sau khi dán: nếu tệp vẫn còn ở chỗ cũ là Copy, nếu đã biến mất là Cut; kiểm tra kỹ kết quả trên màn hình qua từng bước.</td></tr><tr><td>Nhầm giữa xóa thông thường (Delete) và xóa vĩnh viễn (Shift + Delete), lo lắng mất dữ liệu không lấy lại được.</td><td>Ghi nhớ quy tắc: Delete đưa tệp vào Recycle Bin và có thể khôi phục bằng Restore; Shift + Delete xóa hoàn toàn ngay lập tức và hệ thống hiện cảnh báo xác nhận trước khi thực hiện.</td></tr></tbody></table></div>
+  </section>
+  <section id="c">
+    <h2><span class="section-tag"><span>c</span>Sản phẩm cuối cùng</span></h2>
+    <p>Mỗi bước thao tác kèm ảnh chụp màn hình minh chứng. Bấm vào ảnh để phóng to.</p>
+      <ol class="timeline"><li><h3>Mở File Explorer</h3><p>Nhấn tổ hợp phím Windows + E hoặc nhấp vào biểu tượng thư mục màu vàng trên thanh tác vụ.</p><div class="shots"><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/01.jpg" aria-label="Phóng to ảnh: Mở File Explorer"><img src="../assets/img/bai1/01.jpg" alt="Mở File Explorer" loading="lazy"></button><figcaption>Mở File Explorer</figcaption></figure></div></li><li><h3>Tạo thư mục mới</h3><p>Vào thư mục Documents, nhấp chuột phải vào một khoảng trống → New → Folder. Đặt tên thư mục ThucHanh_NguyenTuLinh, nhấn Enter.</p><div class="shots"><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/02.jpg" aria-label="Phóng to ảnh: Tạo thư mục mới bằng New → Folder"><img src="../assets/img/bai1/02.jpg" alt="Tạo thư mục mới bằng New → Folder" loading="lazy"></button><figcaption>Tạo thư mục mới bằng New → Folder</figcaption></figure></div></li><li><h3>Tạo tệp tin văn bản</h3><p>Nhấp đúp vào thư mục ThucHanh_NguyenTuLinh. Nhấp chuột phải vào khoảng trống → New → Text Document, đặt tên GhiChu.txt, nhấn Enter.</p><div class="shots"><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/03.jpg" aria-label="Phóng to ảnh: Tạo tệp văn bản mới"><img src="../assets/img/bai1/03.jpg" alt="Tạo tệp văn bản mới" loading="lazy"></button><figcaption>Tạo tệp văn bản mới</figcaption></figure><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/04.jpg" aria-label="Phóng to ảnh: Đặt tên GhiChu.txt"><img src="../assets/img/bai1/04.jpg" alt="Đặt tên GhiChu.txt" loading="lazy"></button><figcaption>Đặt tên GhiChu.txt</figcaption></figure><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/05.jpg" aria-label="Phóng to ảnh: Tệp GhiChu.txt đã được tạo"><img src="../assets/img/bai1/05.jpg" alt="Tệp GhiChu.txt đã được tạo" loading="lazy"></button><figcaption>Tệp GhiChu.txt đã được tạo</figcaption></figure></div></li><li><h3>Đổi tên tệp tin</h3><p>Nhấp chuột phải vào tệp GhiChu.txt → Rename, đổi tên thành GhiChuQuanTrong.txt, nhấn Enter.</p><div class="shots"><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/06.jpg" aria-label="Phóng to ảnh: Chọn Rename"><img src="../assets/img/bai1/06.jpg" alt="Chọn Rename" loading="lazy"></button><figcaption>Chọn Rename</figcaption></figure><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/07.jpg" aria-label="Phóng to ảnh: Tệp sau khi đổi tên"><img src="../assets/img/bai1/07.jpg" alt="Tệp sau khi đổi tên" loading="lazy"></button><figcaption>Tệp sau khi đổi tên</figcaption></figure></div></li><li><h3>Tạo thư mục con</h3><p>Trong thư mục ThucHanh_NguyenTuLinh, nhấp chuột phải → New → Folder, đặt tên TaiLieu.</p><div class="shots"><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/08.jpg" aria-label="Phóng to ảnh: Thư mục con TaiLieu"><img src="../assets/img/bai1/08.jpg" alt="Thư mục con TaiLieu" loading="lazy"></button><figcaption>Thư mục con TaiLieu</figcaption></figure><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/09.jpg" aria-label="Phóng to ảnh: Cấu trúc thư mục sau khi tạo"><img src="../assets/img/bai1/09.jpg" alt="Cấu trúc thư mục sau khi tạo" loading="lazy"></button><figcaption>Cấu trúc thư mục sau khi tạo</figcaption></figure></div></li><li><h3>Sao chép tệp tin (Copy &amp; Paste)</h3><p>Nhấp chuột phải vào GhiChuQuanTrong.txt → Copy. Nhấp đúp vào thư mục TaiLieu, nhấp chuột phải vào khoảng trống → Paste. Kết quả: có một bản sao của tệp trong thư mục TaiLieu.</p><div class="shots"><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/10.jpg" aria-label="Phóng to ảnh: Chọn Copy"><img src="../assets/img/bai1/10.jpg" alt="Chọn Copy" loading="lazy"></button><figcaption>Chọn Copy</figcaption></figure><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/11.jpg" aria-label="Phóng to ảnh: Chọn Paste trong thư mục TaiLieu"><img src="../assets/img/bai1/11.jpg" alt="Chọn Paste trong thư mục TaiLieu" loading="lazy"></button><figcaption>Chọn Paste trong thư mục TaiLieu</figcaption></figure><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/12.jpg" aria-label="Phóng to ảnh: Bản sao trong thư mục TaiLieu"><img src="../assets/img/bai1/12.jpg" alt="Bản sao trong thư mục TaiLieu" loading="lazy"></button><figcaption>Bản sao trong thư mục TaiLieu</figcaption></figure></div></li><li><h3>Di chuyển tệp tin (Cut &amp; Paste)</h3><p>Quay lại thư mục ThucHanh_NguyenTuLinh, tạo tệp DiChuyen.txt. Nhấp chuột phải vào tệp → Cut, sau đó vào thư mục TaiLieu → Paste. Tệp gốc biến mất khỏi vị trí cũ và chỉ còn ở vị trí mới.</p><div class="shots"><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/13.jpg" aria-label="Phóng to ảnh: Chọn Cut"><img src="../assets/img/bai1/13.jpg" alt="Chọn Cut" loading="lazy"></button><figcaption>Chọn Cut</figcaption></figure><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/14.jpg" aria-label="Phóng to ảnh: Tệp đã được chuyển sang TaiLieu"><img src="../assets/img/bai1/14.jpg" alt="Tệp đã được chuyển sang TaiLieu" loading="lazy"></button><figcaption>Tệp đã được chuyển sang TaiLieu</figcaption></figure></div></li><li><h3>Xóa tệp tin</h3><p>Trong thư mục TaiLieu, nhấp chuột phải vào GhiChuQuanTrong.txt → Delete. Tệp được chuyển vào Thùng rác (Recycle Bin).</p><div class="shots"><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/15.jpg" aria-label="Phóng to ảnh: Xóa tệp bằng Delete"><img src="../assets/img/bai1/15.jpg" alt="Xóa tệp bằng Delete" loading="lazy"></button><figcaption>Xóa tệp bằng Delete</figcaption></figure></div></li><li><h3>Xóa vĩnh viễn</h3><p>Chọn tệp DiChuyen.txt, nhấn giữ Shift và nhấn Delete. Một cảnh báo hiện ra; nếu đồng ý, tệp bị xóa vĩnh viễn mà không qua Thùng rác.</p><div class="shots"><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/16.jpg" aria-label="Phóng to ảnh: Cảnh báo khi xóa vĩnh viễn (Shift + Delete)"><img src="../assets/img/bai1/16.jpg" alt="Cảnh báo khi xóa vĩnh viễn (Shift + Delete)" loading="lazy"></button><figcaption>Cảnh báo khi xóa vĩnh viễn (Shift + Delete)</figcaption></figure></div></li><li><h3>Khôi phục từ Thùng rác</h3><p>Mở Recycle Bin trên màn hình nền, tìm tệp GhiChuQuanTrong.txt, nhấp chuột phải → Restore. Tệp quay trở lại vị trí ban đầu.</p><div class="shots"><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/17.jpg" aria-label="Phóng to ảnh: Khôi phục tệp bằng Restore"><img src="../assets/img/bai1/17.jpg" alt="Khôi phục tệp bằng Restore" loading="lazy"></button><figcaption>Khôi phục tệp bằng Restore</figcaption></figure><figure class="shot"><button class="zoom" data-full="../assets/img/bai1/18.jpg" aria-label="Phóng to ảnh: Tệp đã trở về vị trí cũ"><img src="../assets/img/bai1/18.jpg" alt="Tệp đã trở về vị trí cũ" loading="lazy"></button><figcaption>Tệp đã trở về vị trí cũ</figcaption></figure></div></li></ol>
   </section>
   <nav class="pager" aria-label="Điều hướng bài tập">
-    <a class="btn" href="../projects.html">← Về trang Dự án</a>
-    <a class="btn" href="../projects.html">☰ Danh mục dự án</a>
+    <a class="btn" href="../index.html#gioi-thieu">← Giới thiệu</a>
+    <a class="btn" href="../index.html#du-an">☰ Về trang Dự án</a>
     <a class="btn primary" href="bai-2.html">Bài 2. Tìm kiếm học thuật →</a>
   </nav>
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <div><b>Nguyễn Tú Linh</b> · MSSV: 2552210399 · Lớp: K20H-SPAN</div>
+    <div><b>Nguyễn Tú Linh</b> · MSSV: 2552210399 · Lớp: INF2501_7</div>
     <div>Học phần: Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo (INF2501) · Trường Đại học Sư phạm Nghệ thuật Trung ương</div>
   </div>
 </footer>
+<div class="lightbox" id="lightbox" hidden><button class="lb-close" aria-label="Đóng">✕</button><img alt=""><p></p></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="../assets/js/main.js"></script>
 </body>
 </html>
